@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <title>EgyTeb | HomePage</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css_mine.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+<!-- Start of header -->
+    <div id="#navbar-div" class=" px-5">
+            <div class="row no-gutters">
+                <div class="col-md-6 text-right" id="main-icon-div">
+                <a id="main-icon" href="#">EgyMed</a>
+                <span class="main-icon-text">نكتب هنا حاجة</span>
+                </div>
+                <div class="col-md-6 d-flex align-items-center flex-row-reverse" id="nav-button-div">
+                    <button type="button" class="btn btn-primary navbar-btn">تسجيل دخول</button>
+                    <button type="button" class="btn btn-primary navbar-btn">انضم للموقع</button>
+                </div>
+    </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-mine navbar-dark">
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>القائمة</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav nav-ul m-auto p-0">
+                <li class="nav-item text-center">
+                  <a class="nav-link" href="#">مشخص الأعراض <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" href="#">الأخبار</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link" href="#">سؤال وجواب</a>
+                </li>
+                <li class="nav-item text-center ">
+                    <a class="nav-link" href="#">الأمراض</a>
+                </li>
+                <li class="nav-item text-center ">
+                    <a class="nav-link" href="#">الحمل والولادة</a>
+                </li>
+                <li class="nav-item text-center ">
+                     <a class="nav-link" href="#">بحث عن طبيب</a>
+                </li>
+                <li class="nav-item text-center ">
+                    <a class="nav-link" href="#">حاسبة مؤشر كتلة الجسم </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+<!-- End of header -->
+<section id="Calculators" class="my-4">
+  <div class="container position-relative">
+      <div id="calc-choice">
+        <ul class="list-unstyled p-0">
+          <li class="text-right w-75">
+            <button type="button" class="w-100 calc-btn btn btn-lg btn-outline-primary text-right rounded-0 border-white">حاسبة مؤشر كتلة الجسم</button>
+          </li>    
+          <li class="text-right w-75">
+            <button type="button" class="w-100 calc-btn btn btn-lg btn-outline-primary text-right rounded-0 border-white">حاسبة الوزن المثالي</button>
+          </li>    
+          <li class="text-right w-75">
+            <button type="button" class="w-100 calc-btn btn btn-lg btn-outline-primary text-right rounded-0 border-white">حاسبة دهون الجسم</button>
+          </li>    
+          <li class="text-right w-75">
+            <button type="button" class="w-100 calc-btn btn btn-lg btn-outline-primary text-right rounded-0 border-white">حاسبة السعرات</button>
+          </li>    
+          <li class="text-right w-75">
+            <button type="button" class="w-100 calc-btn btn btn-lg btn-outline-primary text-right rounded-0 border-white">حاسبة زيادة الوزن الناتجة عن الحمل</button>
+          </li>         
+        </ul>
+      </div>
+
+    <div id="BMI" class="disappear">
+      <form >
+        <div class="form-group row">
+          <label for="age-bmi" class="col-sm-1 col-form-label text-right">السن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="age-bmi" placeholder="أدخل السن">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="height-bmi" class="col-sm-1 col-form-label text-right">الطول</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="height-bmi" placeholder="أدخل الطول">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="weight-bmi" class="col-sm-1 col-form-label text-right">الوزن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="weight-bmi" placeholder="أدخل الوزن">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="" class="col-sm-1 col-form-label text-right">النوع</label>
+            <div class="col-sm-10 text-right">
+             <label><input type="radio" checked name="gender-bmi">ذكر</label>
+             <label><input type="radio" name="gender-bmi">أنثى</label>
+            </div>
+          </div>
+        <div class="form-group row ">
+          <div class="col-sm-10 d-flex justify-content-center">
+            <button type="reset" class="btn btn-lg btn-primary" id="calcbmi">احسب</button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex justify-content-between">
+      <div class="text-right"><h1 class="result" id="result-bmi">asdsadsd</h1>
+      <button type="submit" class="btn btn-lg btn-primary back-btn">الرجوع</button>
+      </div>
+      </div>
+    </div>
+
+    <div id="Ideal-Weight" class="disappear">
+      <form >
+        <div class="form-group row">
+          <label for="age-ideal" class="col-sm-1 col-form-label text-right">السن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="age-ideal" placeholder="أدخل السن">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="height-ideal" class="col-sm-1 col-form-label text-right">الطول</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="height-ideal" placeholder="أدخل الطول">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="weight-ideal" class="col-sm-1 col-form-label text-right">الوزن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="weight-ideal" placeholder="أدخل الوزن">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label text-right">النوع</label>
+            <div class="col-sm-10 text-right">
+             <label><input type="radio" checked name="gender-ideal">ذكر</label>
+             <label><input type="radio" name="gender-ideal">أنثى</label>
+            </div>
+          </div>
+        <div class="form-group row ">
+          <div class="col-sm-10 d-flex justify-content-center">
+            <button type="reset" class="btn btn-lg btn-primary" id="calc-ideal">احسب</button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex justify-content-between">
+      <div class="text-right"><h1 class="result" id="result-ideal">asdsadsd</h1><button type="submit" class="btn btn-lg btn-primary back-btn">الرجوع</button>
+      </div>
+      </div>
+    </div>
+
+    <div id="Body-Fat" class="disappear">
+      <form >
+        <div class="form-group row">
+          <label for="age-fat" class="col-sm-1 col-form-label text-right">السن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="age-fat" placeholder="أدخل السن">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="height-fat" class="col-sm-1 col-form-label text-right">الطول</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="height-fat" placeholder="أدخل الطول">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="weight-fat" class="col-sm-1 col-form-label text-right">الوزن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="weight-fat" placeholder="أدخل الوزن">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="neck-fat" class="col-sm-1 col-form-label text-right">حجم الرقبة</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="neck-fat" placeholder="أدخل حجم الرقبة">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="waist-fat" class="col-sm-1 col-form-label text-right">حجم الوسط</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="waist-fat" placeholder="أدخل حجم الوسط">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="hip-fat" class="col-sm-1 col-form-label text-right">حجم الفخذ</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="hip-fat" placeholder="أدخل حجم الفخذ">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="" class="col-sm-1 col-form-label text-right">النوع</label>
+            <div class="col-sm-10 text-right">
+             <label><input type="radio" checked name="gender-fat">ذكر</label>
+             <label><input type="radio" name="gender-fat">أنثى</label>
+            </div>
+          </div>
+        <div class="form-group row ">
+          <div class="col-sm-10 d-flex justify-content-center">
+            <button type="reset" class="btn btn-lg btn-primary" id="calc-fat">احسب</button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex justify-content-between">
+      <div class="text-right"><h1 id="result-fat" class="result">maverick</h1><button type="submit" class="btn btn-lg btn-primary back-btn">الرجوع</button>
+      </div>
+      </div>
+    </div>
+
+    <div id="Calories" class="disappear">
+      <form >
+        <div class="form-group row">
+          <label for="age-calories" class="col-sm-1 col-form-label text-right">السن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="age-calories" placeholder="أدخل السن">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="height-calories" class="col-sm-1 col-form-label text-right">الطول</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="height-calories" placeholder="أدخل الطول">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="weight-calories" class="col-sm-1 col-form-label text-right">الوزن</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="weight-calories" placeholder="أدخل الوزن">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label text-right">النوع</label>
+            <div class="col-sm-10 text-right">
+             <label><input type="radio" checked name="gender-calories">ذكر</label>
+             <label><input type="radio" name="gender-calories">أنثى</label>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-1 col-form-label text-right">درجة النشاط</label>
+            <div class="col-sm-10 d-flex align-items-center">
+              <select class="w-100" id="activity-level">
+                <option selected >خامل</option>
+                <option>نشاط بسيط</option>
+                <option>نساط متوسط</option>
+                <option>رياضي</option>
+              </select>
+            </div>
+          </div>
+        <div class="form-group row ">
+          <div class="col-sm-10 d-flex justify-content-center">
+            <button type="reset" class="btn btn-lg btn-primary" id="calc-calories">احسب</button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex justify-content-between">
+      <div class="text-right"><h1 class="result" id="result-calories">asdsadsd</h1>
+      <button type="submit" class="btn btn-lg btn-primary back-btn">الرجوع</button>
+      </div>
+      </div>
+    </div>
+
+    <div id="pregnancy" class="disappear">
+      <form >
+        <div class="form-group row">
+          <label class="col-sm-1 col-form-label text-right">أسبوع الحمل</label>
+          <div class="col-sm-10 text-right d-flex align-items-center">
+           <select id="pregnancy-select" class="w-100">
+           </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-1 col-form-label text-right">حامل في توأم؟</label>
+          <div class="col-sm-10 d-flex align-items-center text-right">
+           <label><input type="radio" checked name="twins">نعم</label>
+           <label><input type="radio" name="twins">لا</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="height-pregnancy" class="col-sm-1 col-form-label text-right">الطول</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="height-pregnancy" placeholder="أدخل الطول">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="weight-pregnancy" class="col-sm-1 col-form-label text-right"> الوزن قبل الحمل</label>
+          <div class="col-sm-10 d-flex align-items-center">
+            <input type="number" class="form-control" id="weight-pregnancy" placeholder="أدخل الوزن">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="weight-pregnancy-2" class="col-sm-1 col-form-label text-right">الوزن الحالي</label>
+          <div class="col-sm-10 d-flex align-items-center">
+            <input type="number" class="form-control" id="weight-pregnancy-2" placeholder="أدخل الوزن الحالي">
+          </div>
+        </div>
+          <div class="form-group row ">
+          <div class="col-sm-10 d-flex justify-content-center">
+            <button type="reset" class="btn btn-lg btn-primary" id="calc-pregnancy">احسب</button>
+          </div>
+        </div>
+      </form>
+      <div class="d-flex justify-content-between">
+      <div class="text-right"><h1 id="result-pregnancy" class="result">maverick</h1><button type="submit" class="btn btn-lg btn-primary back-btn">الرجوع</button>
+      </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<!-- Start of Footer -->
+<div class="footer bg-light">
+  <div class="container h-100 d-flex justify-content-around align-items-center">
+    
+    <ul id="footer-ul" class="p-0 d-flex w-75 justify-content-around text-center">
+      <li><a href="#">اتصل بنا</a></li>
+      <li><a href="#">أعلن معنا</a></li>
+      <li><a href="#">عن الموقع</a></li>
+      <li><a href="#">خريطة الموقع</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End of Footer -->
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/JS_mine.js"></script>
+  </body>
+</html>

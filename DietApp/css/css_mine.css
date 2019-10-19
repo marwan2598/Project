@@ -1,0 +1,85 @@
+body
+{
+    font-family: 'Almarai', sans-serif;
+direction: rtl !important;
+}
+#navbar-div
+{
+    position: fixed;
+}
+#main-icon
+{
+    text-decoration: none;
+    color: #007bff;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.navbar-btn
+{
+    font-family: 'Almarai', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    color: #007bff;
+    background-color: rgb(183, 214, 255);
+    border-radius: 10px;
+}
+
+.main-icon-text
+{
+    font-family: 'Almarai', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+}
+.navbar-mine
+{
+    background-color: #005bbd;
+}
+.nav-ul li{
+    box-sizing: border-box;
+    margin: 0px 10px;
+}
+.nav-ul a
+{
+    border-bottom: solid transparent;
+    font-family: 'Almarai', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white !important;
+    transition: 1s;
+}
+.nav-ul a:hover
+{
+    color: yellow !important;
+    border-bottom: yellow solid;    
+}
+.footer{
+    height: 150px;
+    position: relative;
+}
+.footer ul
+{
+    list-style: none;
+}
+.footer ul li a
+{
+    text-decoration: none;
+    font-family: 'Almarai', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.calc-btn
+{
+    font-size: 30px;
+}
+.result
+{
+    opacity: 0;
+    color: blue;
+}
+.disappear
+{
+    display: none;
+}
